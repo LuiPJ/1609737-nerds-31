@@ -11,198 +11,161 @@
   <header>
     <nav>
       <ul>
-        <li><a href="index.html"><img src="img/nerds-logo.png" alt="LogoNërds"></a></li>
+        <li>
+          <a href="index.html"><img src="img/nerds-logo.png" alt="logonerds"></a>
+        </li>
         <li><a href="#">Студия</a></li>
         <li><a href="#">Клиенты</a></li>
         <li><a href="#">Магазин</a></li>
         <li><a href="#">Контакты</a></li>
-        <a href="#"><img src="https://via.placeholder.com/15x11" width="15" height="11" alt="iconBasket">Корзина</a>
+        <a href="#"><img src="img/cart-icon.png" width="15" height="11" alt="basket">Корзина</a>
       </ul>
     </nav>
   </header>
   <main>
-    <h2>Фильтр товаров</h2>
-    <span><strong>СТОИМОСТЬ:</strong></span>
-    <form method="get" action="https://echo.htmlacademy.ru">
-      <fieldset>
-        <ul>
-          <li>
-            <input type="range" id="price" name="price" min="0" max="15000">
-          </li>
-          <li>
-            <input type="text" name="from" id="filter-from" value="0">
-            <label for="filter-from">От</label>
-          </li>
-          <li>
-            <input type="text" name="to" id="filter-to" value="15000">
-            <label for="filter-to">До</label>
-          </li>
-        </ul>
-      </fieldset>
-      <fieldset>
-        <legend><strong>СЕТКА:</strong></legend>
-        <ul>
-          <li>
-            <input type="radio" name="adaptive" id="filter-adaptive" checked>
-            <label for="filter-adaptive">Адаптивная</label>
-          </li>
-          <li>
-            <input type="radio" name="fixed" id="filter-fixed">
-            <label for="filter-fixed">Фиксированная</label>
-          </li>
-          <li>
-            <input type="radio" name="liquid" id="filter-liquid">
-            <label for="filter-liquid">Резиновая</label>
-          </li>
-        </ul>
-      </fieldset>
+    <form>
+      <h2>Фильтр товаров</h2>
+      <span><strong>СТОИМОСТЬ:</strong></span>
+      <form method="get" action="https://echo.htmlacademy.ru">
+        <fieldset>
+          <ul>
+            <li>
+              <input type="range" id="price" name="price" min="0" max="15000">
+            </li>
+            <li>
+              <input type="text" name="from" id="filter-from" value="0">
+              <label for="filter-from">От</label>
+            </li>
+            <li>
+              <input type="text" name="to" id="filter-to" value="15000">
+              <label for="filter-to">До</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend><strong>СЕТКА:</strong></legend>
+          <ul>
+            <li>
+              <input type="radio" name="adaptive" id="filter-adaptive" checked>
+              <label for="filter-adaptive">Адаптивная</label>
+            </li>
+            <li>
+              <input type="radio" name="fixed" id="filter-fixed">
+              <label for="filter-fixed">Фиксированная</label>
+            </li>
+            <li>
+              <input type="radio" name="liquid" id="filter-liquid">
+              <label for="filter-liquid">Резиновая</label>
+            </li>
+          </ul>
+        </fieldset>
 
-      <fieldset>
-        <legend>
-          <strong>ОСОБЕННОСТИ</strong>
-        </legend>
+        <fieldset>
+          <legend>
+            <strong>ОСОБЕННОСТИ</strong>
+          </legend>
+          <ul>
+            <li>
+              <input type="checkbox" name="slider" id="filter-slider" checked>
+              <label for="filter-slider">Слайдер</label>
+            </li>
+            <li>
+              <input type="checkbox" name="block-of-features" id="filter-block-of-features">
+              <label for="filter-block-of-features">Блок преимуществ</label>
+            </li>
+            <li>
+              <input type="checkbox" name="news" id="filter-news" checked>
+              <label for="filter-news">Новости</label>
+            </li>
+            <li>
+              <input type="checkbox" name="gallery" id="filter-gallery">
+              <label for="filter-gallery">Галлерея</label>
+            </li>
+            <li>
+              <input type="checkbox" name="basket" id="filter-basket">
+              <label for="filter-basket">Корзина</label>
+            </li>
+          </ul>
+        </fieldset>
+        <section>
+          <button type="submit">ПОКАЗАТЬ</button>
+        </section>
+      </form>
+      <section>
+        <span><strong>СОРТИРОВАТЬ:</strong></span>
         <ul>
           <li>
-            <input type="checkbox" name="slider" id="filter-slider" checked>
-            <label for="filter-slider">Слайдер</label>
+            <button type="button">По цене</button>
           </li>
           <li>
-            <input type="checkbox" name="block-of-features" id="filter-block-of-features">
-            <label for="filter-block-of-features">Блок преимуществ</label>
+            <button type="button">По типу</button>
           </li>
           <li>
-            <input type="checkbox" name="news" id="filter-news" checked>
-            <label for="filter-news">Новости</label>
+            <button type="button">По названию</button>
           </li>
           <li>
-            <input type="checkbox" name="gallery" id="filter-gallery">
-            <label for="filter-gallery">Галлерея</label>
+            <button type="button"><img src="img/icon-down-dir.png" width="11" height="10" alt="arrowup"></button>
           </li>
           <li>
-            <input type="checkbox" name="basket" id="filter-basket">
-            <label for="filter-basket">Корзина</label>
+            <button type="button"><img src="img/icon-up-dir.png" width="11" height="10" alt="arrowdown"></button>
           </li>
         </ul>
-      </fieldset>
-    <section>
-      <button type="submit">ПОКАЗАТЬ</button>
-    </form>
-    </section>
-    <section>
-      <span><strong>СОРТИРОВАТЬ:</strong></span>
-      <ul>
-        <li>
-          <button type="button">По цене</button>
-        </li>
-        <li>
-          <button type="button">По типу</button>
-        </li>
-        <li>
-          <button type="button">По названию</button>
-        </li>
-        <li>
-          <button type="button"><img src="https://via.placeholder.com/11x10" width="11" height="10" alt="Up"></button>
-        </li>
-        <li>
-          <button type="button"><img src="https://via.placeholder.com/11x10" width="11" height="10" alt="Down"></button>
-        </li>
-      </ul>
-      <h2>Каталог товаров</h2>
-      <ul>
-        <li>
-          <ul>
-            <li>
-              <img src="https://via.placeholder.com/14x14" width="14" height="14" alt="pach">
-              <img src="https://via.placeholder.com/14x14" width="14" height="14" alt="pach">
-              <img src="https://via.placeholder.com/14x14" width="14" height="14" alt="pach">
-            </li>
-            <li>
-              <a href="#"><img src="img/img-sedona 1.jpeg" width="358" height="578" alt="Sedona"></a>
-            </li>
-            <li>
-              <h3>Sedona</h3>
-              <p>Информационный сайт для туристов</p>
-              <button type="button">9 900 ₽</button>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <ul>
-            <li>
-              <img src="https://via.placeholder.com/14x14" width="14" height="14" alt="pach">
-              <img src="https://via.placeholder.com/14x14" width="14" height="14" alt="pach">
-              <img src="https://via.placeholder.com/14x14" width="14" height="14" alt="pach">
-            </li>
-            <li>
-              <a href=""><img src="img/img-pink 1.jpeg" width="358" height="578" alt="Pink app"></a>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <ul>
-            <li>
-              <img src="https://via.placeholder.com/14x14" width="14" height="14" alt="pach">
-              <img src="https://via.placeholder.com/14x14" width="14" height="14" alt="pach">
-              <img src="https://via.placeholder.com/14x14" width="14" height="14" alt="pach">
-            </li>
-            <li>
-              <a href=""><img src="img/img-barbershop 1.jpeg" width="358" height="578" alt="Barbershop"></a>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <ul>
-            <li>
-              <img src="https://via.placeholder.com/14x14" width="14" height="14" alt="pach">
-              <img src="https://via.placeholder.com/14x14" width="14" height="14" alt="pach">
-              <img src="https://via.placeholder.com/14x14" width="14" height="14" alt="pach">
-            </li>
-            <li>
-              <a href=""><img src="img/img-mishka 1.jpeg" width="358" height="578" alt="Bears"></a>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <ul>
-            <li>
-              <img src="https://via.placeholder.com/14x14" width="14" height="14" alt="0">
-              <img src="https://via.placeholder.com/14x14" width="14" height="14" alt="pach">
-              <img src="https://via.placeholder.com/14x14" width="14" height="14" alt="pach">
-            </li>
-            <li>
-              <a href="#"><img src="img/img-aplus 1.jpeg" width="358" height="578" alt="Aplus"></a>
-            </li>
-          </ul>
-        </li>
-      </ul>
-      <li>
+        <h2>Каталог товаров</h2>
         <ul>
           <li>
-            <img src="https://via.placeholder.com/14x14" width="14" height="14" alt="0">
-            <img src="https://via.placeholder.com/14x14" width="14" height="14" alt="pach">
-            <img src="https://via.placeholder.com/14x14" width="14" height="14" alt="pach">
+            <a href="#"><img src="img/sedona 1.jpeg" width="358" height="578" alt="sedona"></a>
           </li>
           <li>
-            <a href="#"><img src="img/img-kvast 1.jpeg" width="358" height="578" alt="Kvast"></a>
+            <h3>Sedona</h3>
+            <p>Информационный сайт для туристов</p>
+            <button type="button">9 900 ₽</button>
           </li>
         </ul>
-      </li>
-    </ul>
-      <ul>
-        <li>
-          <a href="#">1</a>
-        </li>
-        <li>
-          <a href="#">2</a>
-        </li>
-        <li>
-          <a href="#">3</a>
-        </li>
-        <li>
-          <a href="#">Следующая</a>
-        </li>
-      </ul>
-    </section>
+        <ul>
+          <li>
+            <a href=""><img src="img/pink 1.jpeg" width="358" height="578" alt="pinkapp"></a>
+          </li>
+          <li>
+            <h3>PINK APP</h3>
+            <p>Продуктовый лендинг приложения для IOS и Android</p>
+            <button type="button">9 900 ₽</button>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <a href=""><img src="img/barbershop 1.jpeg" width="358" height="578" alt="barbershop"></a>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <a href=""><img src="img/mishka 1.jpeg" width="358" height="578" alt="mishka"></a>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <a href="#"><img src="img/aplus 1.jpeg" width="358" height="578" alt="aplus"></a>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <a href="#"><img src="img/kvast 1.jpeg" width="358" height="578" alt="kvast"></a>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <a href="#">1</a>
+          </li>
+          <li>
+            <a href="#">2</a>
+          </li>
+          <li>
+            <a href="#">3</a>
+          </li>
+          <li>
+            <a href="#">Следующая</a>
+          </li>
+        </ul>
+      </section>
   </main>
   <footer>
     <section>
@@ -215,16 +178,15 @@
         <button>
           НАПИШИТЕ НАМ
         </button>
-        <img src="img/map 1.png" width="1440" height="416" alt="map">
-        <img src="img/map-marker 1.png" width="231" height="190" alt="map-marker">
+        <img src="/img/Group_13.png" width="1440" height="416" alt="map">
       </form>
     </section>
     <section>
       <h3>Давайте дружить, это выгодно!</h3>
       <p>Скидка 10% для друзей из социальных сетей.</p>
-      <img src="https://via.placeholder.com/81x81" width="82" height="81" alt="иконка vk">
-      <img src="https://via.placeholder.com/81x81" width="82" height="81" alt="иконка facebook">
-      <img src="https://via.placeholder.com/81x81" width="82" height="81" alt="иконка instagram">
+      <img src="img/Group 2.png" width="82" height="81" alt="iconvk">
+      <img src="img/Group 3.png" width="82" height="81" alt="iconfacebook">
+      <img src="img/Group 4.png" width="82" height="81" alt="iconinstagram">
     </section>
   </footer>
 </body>
